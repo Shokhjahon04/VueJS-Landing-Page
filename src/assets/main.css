@@ -1,0 +1,250 @@
+@import './base.css';
+
+/*=============== ICON LIST ===============*/
+.icon__list{
+  display: grid;
+  row-gap: 1.5rem;
+}
+.icon__item{
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+/*=============== DOWNLOAD BUTTONS ===============*/
+.program__button{
+  width: 200px;
+  display: flex;
+  align-items: center;
+  column-gap: .5rem;
+  margin: 2rem 0 2rem 0;
+}
+
+.program-icon{
+  font-weight: var(--font-small);
+}
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 320px){
+  .container{
+      margin-left: 1rem;
+      margin-right: 1rem;
+  }
+}
+
+/* For medium devices */
+@media screen and (min-width: 500px){
+  .footer__buttons{
+    flex-direction: row !important;
+    align-items: center;
+    column-gap: 1rem;
+  }
+
+  .team__container{
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 767px){
+  body{
+    margin: 0;
+  }
+
+  .home__container{
+    margin-top: 13rem;
+    align-items: center;
+  }
+
+  .home__button-box{
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 1rem;
+  }
+
+  .portfolio__container{
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
+
+  .rewards__container,
+  .explore__container,
+  .start__container{
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 3rem;
+  }
+
+  .news__container,
+  .drive__container,
+  .mission__container{
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.5rem;
+  }
+
+  .program__container{
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
+
+  .explore__button{
+    width: 200px;
+  }
+
+  .a-home{
+    padding: 10rem 0 2rem 0 !important;
+  }
+
+  .footer__logo-box{
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+  }
+
+  .footer__data{
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem !important;
+  }
+
+  /* ========== TITLE BOX ========== */
+
+  .users__title-box,
+  .news__title-box,
+  .program__title-box{
+    flex-direction: row !important;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .users__title,
+  .news__title,
+  .program__title{
+    margin-bottom: 0;
+  }
+
+  .team__container{
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .p-icon__container{
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+  }
+
+  .price__container{
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2.5rem;
+  }
+}
+
+/* For large devices */
+@media screen and (min-width: 992px){
+  .section{
+      padding: 8rem 0 1rem;
+  }
+
+  .home__container{
+      column-gap: 3rem;
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+  .home__img-mobile{
+    display: none;
+  }
+
+  .home__img{
+    display: block !important;
+    position: absolute;
+    right: 0;
+    width: 480px;
+  }
+
+  .investors__container{
+    grid-template-columns: repeat(5, 1fr) !important;
+    column-gap: 3rem;
+  }
+
+  .portfolio__container{
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+  }
+
+  .program__container{
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3rem;
+  }
+
+  .a-home{
+    padding: 10rem 0 2rem 0 !important;
+  }
+
+  .a-home__container{
+    text-align: center;
+  }
+
+  .mission__container{
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4rem !important;
+  }
+
+  .p-icon__container{
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2.5rem;
+  }
+
+  .token__item{
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer__data{
+    column-gap: 5rem !important;
+  }
+}
+
+@media screen and (min-width: 1250px){
+  .container{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .home__img{
+    width: 550px;
+  }
+
+  .explore__container{
+    column-gap: 5rem !important;
+  }
+
+  .news__container{
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .program__container{
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4rem;
+  }
+
+  .a-home{
+    padding: 19rem 0 9rem 0 !important;
+  }
+
+  .price__container{
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2.5rem;
+  }
+
+  .footer__data{
+    column-gap: 30rem !important;
+  }
+}
+
+@media screen and (min-width: 1350px){
+  .home__img{
+    width: 630px;
+  }
+}
